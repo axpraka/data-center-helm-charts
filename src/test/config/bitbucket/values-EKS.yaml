@@ -60,6 +60,6 @@ affinity:
 nodeSelector:
   node_purpose: ci
 
-image:
-  # test Bitbucket mesh
-  tag: 8.6.1
+# image:
+#   # test Bitbucket mesh
+#   tag: 8.6.1
