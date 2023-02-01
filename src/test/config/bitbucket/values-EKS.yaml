@@ -27,10 +27,6 @@ bitbucket:
   additionalEnvironmentVariables:
     - name: PLUGIN_SSH_BASEURL
       value: ssh://${helm.release.prefix}-bitbucket-ssh.${eks.ingress.domain}/
-  mesh:
-    enabled: true
-    nodeAutoRegistration: true
-    setByDefault: true
 
 volumes:
   localHome:
@@ -59,7 +55,3 @@ affinity:
 
 nodeSelector:
   node_purpose: ci
-
-# image:
-#   # test Bitbucket mesh
-#   tag: 8.6.1
